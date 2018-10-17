@@ -1,8 +1,7 @@
-import v from './node_modules/v/v.mjs'//@todo get into util
-
 import silo from './input.mjs'
 export default silo
-const {config,util,logic,input,output}=silo(function output(state)
+const
+{config,util,logic,input,output}=silo(function output(state)
 {
 	const
 	{accounts,entries}=JSON.parse(JSON.stringify(state.file)),
@@ -49,7 +48,8 @@ const {config,util,logic,input,output}=silo(function output(state)
 		),
 		v('dl.list',{on:{click}},...items)
 	]
-})
+}),
+{v}=util
 
 output.list=function(arr)
 {
