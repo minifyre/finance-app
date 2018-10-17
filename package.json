@@ -1,0 +1,14 @@
+{
+	"name": "finance-app",
+	"description": "A csv reader to help track expenses.",
+	"homepage": "https://github.com/minifyre/finance-app",
+	"license": "MIT",
+	"version": "0.5.0",
+	"dependencies": {
+		"truth":"minifyre/truth",
+		"v":"minifyre/v"
+	},
+	"devDependencies": {
+		"cherub": "minifyre/cherub"
+	}
+}
