@@ -23,7 +23,8 @@ const
 	{
 		const
 		vals=Object.values(accounts[type]),
-		[max,total]=[Math.max,util.sum].map(fn=>fn(...vals))
+		total=util.sum(...vals),
+		max=Math.max(...vals.sort((a,b)=>b-a).slice(1))//filter out outlier
 
 		return [v('dt',{},type+': '+util.num2currency(total)),
 			...Object.entries(accounts[type])
