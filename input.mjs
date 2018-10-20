@@ -22,5 +22,5 @@ input.onloadend=function({target:{readyState,result}},state)
 input.accountHistory=function({target},state)
 {
 	if(target.nodeName.toLowerCase()!=='dd') return
-	state.transactions=target.getAttribute('data-account')//@todo move into logic
+	state.view.transactions=target.getAttribute('data-account')//@todo move into logic
 }

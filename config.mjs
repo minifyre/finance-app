@@ -15,5 +15,8 @@ config.state=
 		},
 		entries:[]
 	},//@used to trigger showing transaction history for an account
-	transactions:false
+	view:
+	{
+		transactions:false
+	}
 }
