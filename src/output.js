@@ -1,7 +1,4 @@
-import silo from './input.mjs'
-export default silo
-const
-{config,util,logic,input,output}=silo(function output(state)
+output.render=function(state)
 {
 	const
 	{accounts,entries}=JSON.parse(JSON.stringify(state.file)),
@@ -49,9 +46,7 @@ const
 		),
 		v('dl.list',{on:{click}},...items)
 	]
-}),
-{v}=util
-
+}
 output.list=function(arr)
 {
 	const state=logic.parseJSON(arr)//@todo eliminate

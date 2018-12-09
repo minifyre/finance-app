@@ -1,11 +1,3 @@
-import silo from './config.mjs'
-export default silo
-const {config,util}=silo()
-
-import truth from './node_modules/truth/truth.mjs'
-import v from './node_modules/v/v.mjs'
-Object.assign(util,{truth,v})
-
 util.csv2json=function(csv)
 {//@todo handle "values with,commas"
 	const

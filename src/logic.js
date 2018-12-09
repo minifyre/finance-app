@@ -1,10 +1,3 @@
-import silo from './util.mjs'
-export default silo
-const {config,util,logic}=silo(function logic(opts)
-{
-	return Object.assign({},config.state,opts)
-})
-
 logic.addAccount=function(state,type,name,balance)
 {
 	if(!state.file.accounts[type][name]) state.file.accounts[type][name]=balance||0

@@ -1,7 +1,3 @@
-import silo from './node_modules/silo/index.mjs'
-export default silo
-const {config}=silo()
-
 config.state=
 {
 	file:
