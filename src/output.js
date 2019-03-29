@@ -1,4 +1,4 @@
-output.render=function(state)
+output.render=function({state})
 {
 	const
 	{accounts,entries}=JSON.parse(JSON.stringify(state.file)),

@@ -4,7 +4,13 @@ import v from './node_modules/v/v.mjs'
 
 const {config,util,logic,output,input}=silo
 
-export default silo(function()
+export default silo(async function()
 {
-	truth(logic(),truth.compile(({state})=>v.render(document.body,state,output)))
+	customElements.define(config.state.view.type,class extends silo.customElement
+	{
+		constructor(state)
+		{
+			super(state,silo)
+		}
+	})
 })
