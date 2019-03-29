@@ -1,7 +1,9 @@
 util.csv2json=function(csv)
 {//@todo handle "values with,commas"
 	const
-	[props,...entries]=csv.split(/\r?\n/).map(x=>x.split(',')),
+	[props,...entries]=csv.split(/\r?\n/)
+	.filter(txt=>txt.length)
+	.map(x=>x.split(',')),
 	arr2obj=(obj,val,i)=>Object.assign(obj,{[props[i]]:val})
 
 	return entries.map(vals=>vals.reduce(arr2obj,{}))
