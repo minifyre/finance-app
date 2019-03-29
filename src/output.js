@@ -41,7 +41,8 @@ output.render=function(state)
 	.reduce(util.flatten,[]),
 	click=evt=>input.accountHistory(evt,state)//@todo curry state
 
-	return [v('header',{},
+	return [v('style',{},config.style),
+		v('header',{},
 			v('input',{on:{change:evt=>input.file(evt,state)},type:'file'})
 		),
 		v('dl.list',{on:{click}},...items)
