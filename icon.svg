@@ -36,6 +36,10 @@
 	<circle cx="55" cy="63.75" r="1.25" fill="#222" />
 	<circle cx="55" cy="71.25" r="1.25" fill="#222" />
 
+	<g style="font-size:15px; font-weight:bold; opacity:0.4;">
+		<text x="17.5" y="75">$</text>
+		<text x="72.5" y="75">$</text>
+	</g>
 
 	<g mask="url(#corners)">
 		<rect mask="url(#shadow)" x="0" y="75" width="100" height="25" fill="#000" opacity="0.2" />
