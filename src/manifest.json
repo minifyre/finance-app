@@ -1,0 +1,16 @@
+{
+  "name": "finance",
+  "short_name": "finance",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff",
+  "theme_color": "#673ab8",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg",
+      "sizes": "512x512"
+    }
+  ]
+}
